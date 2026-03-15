@@ -126,25 +126,23 @@ Stockfish uses neural networks trained on [data provided by the Leela Chess Zero
 project][lc0-data-link], which is made available under the [Open Database License][odbl-link] (ODbL).
 
 
-[authors-link]:       https://github.com/official-stockfish/Stockfish/blob/master/AUTHORS
-[build-link]:         https://github.com/official-stockfish/Stockfish/actions/workflows/stockfish.yml
-[commits-link]:       https://github.com/official-stockfish/Stockfish/commits/master
-[discord-link]:       https://discord.gg/GWDRS3kU6R
-[issue-link]:         https://github.com/official-stockfish/Stockfish/issues/new?assignees=&labels=&template=BUG-REPORT.yml
-[discussions-link]:   https://github.com/official-stockfish/Stockfish/discussions/new
-[fishtest-link]:      https://tests.stockfishchess.org/tests
-[guideline-link]:     https://github.com/official-stockfish/fishtest/wiki/Creating-my-first-test
-[license-link]:       https://github.com/official-stockfish/Stockfish/blob/master/Copying.txt
+[authors-link]:       https://github.com/bit10-101010/bit/blob/master/AUTHORS
+[build-link]:         https://github.com/bit10-101010/bit/actions/workflows/bit.yml
+[commits-link]:       https://github.com/bit10-101010/bit/commits/master
+[issue-link]:         https://github.com/bit10-101010/bit/issues/new?assignees=&labels=&template=BUG-REPORT.yml
+[discussions-link]:   https://github.com/bit10-101010/bit/discussions/new
+[bittest-link]:       @bit10-101010
+[guideline-link]:     https://github.com/bit10-101010/bittest/wiki/Creating-my-first-test
+[license-link]:       https://github.com/bit10-101010/bit/blob/master/Copying.txt
 [programming-link]:   https://www.chessprogramming.org/Main_Page
-[programmingsf-link]: https://www.chessprogramming.org/Stockfish
-[readme-link]:        https://github.com/official-stockfish/Stockfish/blob/master/README.md
-[release-link]:       https://github.com/official-stockfish/Stockfish/releases/latest
-[src-link]:           https://github.com/official-stockfish/Stockfish/tree/master/src
-[stockfish128-logo]:  https://stockfishchess.org/images/logo/icon_128x128.png
+[readme-link]:        https://github.com/bit10-101010/bit/blob/master/README.md
+[release-link]:       https://github.com/bit10-101010/bit/releases/latest
+[src-link]:           https://github.com/bit10-101010//tree/master/src
+[bit-logo]:           [https://stockfishchess.org/images/logo/icon_128x128.png](https://avatars.githubusercontent.com/u/267054980?s=400&u=a2ca190cabaeb5a07afc6dc0aab543c2720ba316&v=4)
 [uci-link]:           https://backscattering.de/chess/uci/
-[website-link]:       https://stockfishchess.org
-[website-blog-link]:  https://stockfishchess.org/blog/
-[wiki-link]:          https://github.com/official-stockfish/Stockfish/wiki
+[website-link]:       @bit10-101010
+[website-blog-link]:  @bit10-101010
+[wiki-link]:          https://github.com/bit10-101010/bit/wiki
 [wiki-compile-link]:  https://github.com/official-stockfish/Stockfish/wiki/Compiling-from-source
 [wiki-uci-link]:      https://github.com/official-stockfish/Stockfish/wiki/UCI-&-Commands
 [wiki-usage-link]:    https://github.com/official-stockfish/Stockfish/wiki/Download-and-usage
