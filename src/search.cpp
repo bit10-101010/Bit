@@ -1223,6 +1223,11 @@ moves_loop:  // When in check, search starts here
         // Decrease/increase reduction for moves with a good/bad history
         r -= ss->statScore * 454 / 4096;
 
+        // Quiet checking moves often carry tactical value that static history
+        // does not fully capture; keep more depth for promising checks.
+        if (givesCheck && !capture)
+            r -= 402 + 140 * (depth > 8) + 128 * (ss->statScore > 0);
+
         // Scale up reductions for expected ALL nodes
         if (allNode)
             r += r * 276 / (256 * depth + 254);
@@ -1247,8 +1252,9 @@ moves_loop:  // When in check, search starts here
             {
                 // Adjust full-depth search based on LMR results - if the result was
                 // good enough search deeper, if it was bad enough search shallower.
-                const bool doDeeperSearch    = d < newDepth && value > bestValue + 50;
-                const bool doShallowerSearch = value < bestValue + 9;
+                const bool doDeeperSearch = d < newDepth
+                                         && value > bestValue + 50 + 8 * (depth > 9);
+                const bool doShallowerSearch = value < bestValue + 9 - 2 * (depth > 11);
 
                 newDepth += doDeeperSearch - doShallowerSearch;
 
