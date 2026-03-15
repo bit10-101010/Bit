@@ -1,13 +1,13 @@
 /*
-  Stockfish, a UCI chess playing engine derived from Glaurung 2.1
-  Copyright (C) 2004-2026 The Stockfish developers (see AUTHORS file)
+  Bit, a UCI chess playing engine derived from Glaurung 2.1
+  Copyright (C) 2004-2026 The Bit developers (see AUTHORS file)
 
-  Stockfish is free software: you can redistribute it and/or modify
+  Bit is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 3 of the License, or
   (at your option) any later version.
 
-  Stockfish is distributed in the hope that it will be useful,
+  Bit is distributed in the hope that it will be useful,
   but WITHOUT ANY WARRANTY; without even the implied warranty of
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
@@ -69,7 +69,7 @@ struct EmbeddedNNUE {
     const unsigned int   size;
 };
 
-using namespace Stockfish::Eval::NNUE;
+using namespace Bit::Eval::NNUE;
 
 EmbeddedNNUE get_embedded(EmbeddedNNUEType type) {
     if (type == EmbeddedNNUEType::BIG)
@@ -81,7 +81,7 @@ EmbeddedNNUE get_embedded(EmbeddedNNUEType type) {
 }
 
 
-namespace Stockfish::Eval::NNUE {
+namespace Bit::Eval::NNUE {
 
 
 namespace Detail {
@@ -205,7 +205,8 @@ void Network<Arch, Transformer>::verify(std::string                             
             std::string msg3 = "The UCI option EvalFile might need to specify the full path, "
                                "including the directory name, to the network file.";
             std::string msg4 = "The default net can be downloaded from: "
-                               "https://tests.stockfishchess.org/api/nn/"
+            //@bit10-101010
+                               "https://tests.bitchess.org/api/nn/"
                              + std::string(evalFile.defaultName);
             std::string msg5 = "The engine will be terminated now.";
 
@@ -413,4 +414,4 @@ template class Network<NetworkArchitecture<TransformedFeatureDimensionsBig, L2Bi
 template class Network<NetworkArchitecture<TransformedFeatureDimensionsSmall, L2Small, L3Small>,
                        FeatureTransformer<TransformedFeatureDimensionsSmall>>;
 
-}  // namespace Stockfish::Eval::NNUE
+}  // namespace Bit::Eval::NNUE

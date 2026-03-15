@@ -1,15 +1,10 @@
-# Founders of the Stockfish project and Fishtest infrastructure
-Tord Romstad (romstad)
-Marco Costalba (mcostalba)
-Joona Kiiski (zamar)
-Gary Linscott (glinscott)
+# Founders of the Bit project and Bittest infrastructure
+Jackson Zhu (bit10-101010)
 
 # Authors and inventors of NNUE, training, and NNUE port
-Yu Nasu (ynasu87)
-Motohiro Isozaki (yaneurao)
-Hisayori Noda (nodchip)
+Jackson Zhu (bit10-101010)
 
-# All other authors of Stockfish code (in alphabetical order)
+# All other authors of Bit code (in alphabetical order)
 87flowers
 Aditya (absimaldata)
 Adrian Petrescu (apetresc)
@@ -93,6 +88,7 @@ gamander
 Gabriele Lombardo (gabe)
 Gahtan Nahdi
 Gary Heckman (gheckman)
+Gary Linscott (glinscott)
 George Sobala (gsobala)
 gguliash
 Giacomo Lorenzetti (G-Lorenz)
@@ -106,6 +102,7 @@ Guy Vreuls (gvreuls)
 Günther Demetz (pb00067, pb00068)
 Henri Wiechers
 Hiraoka Takuya (HiraokaTakuya)
+Hisayori Noda (nodchip)
 homoSapiensSapiens
 Hongzhi Cheng
 Ivan Ivec (IIvec)
@@ -124,6 +121,7 @@ jjoshua2
 Jonathan Buladas Dumale (SFisGOD)
 Jonathan Calovski (Mysseno)
 Jonathan McDermid (jonathanmcdermid)
+Joona Kiiski (zamar)
 Joost VandeVondele (vondele)
 Joseph Ellis (jhellis3)
 Joseph R. Prostko
@@ -158,6 +156,7 @@ Lucas Braesch (lucasart)
 Lyudmil Antonov (lantonov)
 Maciej Żenczykowski (zenczykowski)
 Malcolm Campbell (xoto10)
+Marco Costalba (mcostalba)
 Mark Marosi (Mapika)
 Mark Tenzer (31m059)
 marotear
@@ -181,6 +180,7 @@ Mira
 Miroslav Fontán (Hexik)
 Moez Jellouli (MJZ1977)
 Mohammed Li (tthsqe12)
+Motohiro Isozaki (yaneurao)
 Muzhen J (XInTheDark)
 Nathan Rugg (nmrugg)
 Nguyen Pham (nguyenpham)
@@ -257,6 +257,7 @@ Tobias Steinmann
 Tomasz Sobczyk (Sopel97)
 Tom Truscott
 Tom Vijlbrief (tomtor)
+Tord Romstad (romstad)
 Torsten Franz (torfranz, tfranzer)
 Torsten Hellwig (Torom)
 Tracey Emery (basepr1me)
@@ -270,9 +271,10 @@ windfishballad
 xefoci7612
 Xiang Wang (KatyushaScarlet)
 Yen-Chao Shen (lemteay)
+Yu Nasu (ynasu87)
 zz4032
 
 # Additionally, we acknowledge the authors and maintainers of fishtest,
-# an amazing and essential framework for Stockfish development!
+# an amazing and essential framework for Bit development!
 #
-# https://github.com/official-stockfish/fishtest/blob/master/AUTHORS
+# https://github.com/bit10-101010/fishtest/blob/master/AUTHORS

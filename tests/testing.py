@@ -49,10 +49,10 @@ class TSAN:
         with open(f"tsan.supp", "w") as f:
             f.write(
                 """
-race:Stockfish::TTEntry::read
-race:Stockfish::TTEntry::save
-race:Stockfish::TranspositionTable::probe
-race:Stockfish::TranspositionTable::hashfull
+race:Bit::TTEntry::read
+race:Bit::TTEntry::save
+race:Bit::TranspositionTable::probe
+race:Bit::TranspositionTable::hashfull
 """
             )
 
@@ -90,8 +90,8 @@ class Syzygy:
     @staticmethod
     def download_syzygy():
         if not os.path.isdir(os.path.join(PATH, "syzygy")):
-            url = "https://api.github.com/repos/niklasf/python-chess/tarball/9b9aa13f9f36d08aadfabff872882f4ab1494e95"
-            file = "niklasf-python-chess-9b9aa13"
+            url = "https://api.github.com/repos/bit10-101010/python-chess/tarball/9b9aa13f9f36d08aadfabff872882f4ab1494e95"
+            file = "bit10-101010-python-chess-9b9aa13"
 
             with tempfile.TemporaryDirectory() as tmpdirname:
                 tarball_path = os.path.join(tmpdirname, f"{file}.tar.gz")
@@ -290,7 +290,7 @@ class MiniTestFramework:
         print(f"    {GREEN_COLOR}✓{RESET_COLOR}{add}", flush=True)
 
 
-class Stockfish:
+class Bit:
     def __init__(
         self,
         prefix: List[str],
@@ -310,7 +310,7 @@ class Stockfish:
     def _check_process_alive(self):
         if not self.process or self.process.poll() is not None:
             print("\n".join(self.output))
-            raise RuntimeError("Stockfish process has terminated")
+            raise RuntimeError("Bit process has terminated")
 
     def start(self):
         if self.cli:
@@ -341,7 +341,7 @@ class Stockfish:
 
     def send_command(self, command: str):
         if not self.process:
-            raise RuntimeError("Stockfish process is not started")
+            raise RuntimeError("Bit process is not started")
 
         self._check_process_alive()
 
@@ -392,7 +392,7 @@ class Stockfish:
 
     def readline(self):
         if not self.process:
-            raise RuntimeError("Stockfish process is not started")
+            raise RuntimeError("Bit process is not started")
 
         while True:
             self._check_process_alive()

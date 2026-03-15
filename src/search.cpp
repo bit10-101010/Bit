@@ -1,13 +1,13 @@
 /*
-  Stockfish, a UCI chess playing engine derived from Glaurung 2.1
-  Copyright (C) 2004-2026 The Stockfish developers (see AUTHORS file)
+  Bit, a UCI chess playing engine derived from Glaurung 2.1
+  Copyright (C) 2004-2026 The Bit developers (see AUTHORS file)
 
-  Stockfish is free software: you can redistribute it and/or modify
+  Bit is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 3 of the License, or
   (at your option) any later version.
 
-  Stockfish is distributed in the hope that it will be useful,
+  Bit is distributed in the hope that it will be useful,
   but WITHOUT ANY WARRANTY; without even the implied warranty of
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
@@ -50,14 +50,14 @@
 #include "uci.h"
 #include "ucioption.h"
 
-namespace Stockfish {
+namespace Bit {
 
 namespace TB = Tablebases;
 
 void syzygy_extend_pv(const OptionsMap&            options,
                       const Search::LimitsType&    limits,
-                      Stockfish::Position&         pos,
-                      Stockfish::Search::RootMove& rootMove,
+                      Bit::Position&         pos,
+                      Bit::Search::RootMove& rootMove,
                       Value&                       v);
 
 using namespace Search;
@@ -2099,7 +2099,7 @@ void syzygy_extend_pv(const OptionsMap&         options,
     // rule if it has been been reached on the board with a non-optimal 50 move counter
     // (e.g. 8/8/6k1/3B4/3K4/4N3/8/8 w - - 54 106 ) which TB with dtz counter rounding
     // cannot always correctly rank. See also
-    // https://github.com/official-stockfish/Stockfish/issues/5175#issuecomment-2058893495
+    // https://github.com/bit10-101010/Bit/issues/5175#issuecomment-2058893495
     // We adjust the score to match the found PV. Note that a TB loss score can be
     // displayed if the engine did not find a drawing move yet, but eventually search
     // will figure it out (e.g. 1kq5/q2r4/5K2/8/8/8/8/7Q w - - 96 1 )
@@ -2214,4 +2214,4 @@ bool RootMove::extract_ponder_from_tt(const TranspositionTable& tt, Position& po
 }
 
 
-}  // namespace Stockfish
+}  // namespace Bit

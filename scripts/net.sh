@@ -47,10 +47,10 @@ fetch_network() {
       "Install one of these tools to download NNUE files automatically."
     exit 1
   fi
-
+#@bit10-101010
   for url in \
-    "https://tests.stockfishchess.org/api/nn/$_filename" \
-    "https://github.com/official-stockfish/networks/raw/master/$_filename"; do
+    "https://tests.bitchess.org/api/nn/$_filename" \
+    "https://github.com/bit10-101010/networks/raw/master/$_filename"; do
     echo "Downloading from $url ..."
     if $wget_or_curl "$url" >"$_filename"; then
       if validate_network "$_filename"; then

@@ -1,18 +1,15 @@
-# This CITATION.cff file was generated with cffinit.
-# Visit https://bit.ly/cffinit to generate yours today!
-
 cff-version: 1.2.0
-title: Stockfish
+title: Bit
 message: >-
   Please cite this software using the metadata from this
   file.
 type: software
 authors:
-  - name: The Stockfish developers (see AUTHORS file)
-repository-code: 'https://github.com/official-stockfish/Stockfish'
-url: 'https://stockfishchess.org/'
-repository-artifact: 'https://stockfishchess.org/download/'
-abstract: Stockfish is a free and strong UCI chess engine.
+  - name: The Bit developers (see AUTHORS file)
+repository-code: 'https://github.com/bit10-101010/Bit'
+url: 'https://bit10-101010.github.io/Bit/'
+repository-artifact: 'https://bit10-101010.github.io/Bit/download/'
+abstract: Bit is a free and strong UCI chess engine.
 keywords:
   - chess
   - artificial intelligence (AI)
@@ -20,4 +17,4 @@ keywords:
   - alpha-beta search
   - neural networks (NN)
   - efficiently updatable neural networks (NNUE)
-license: GPL-3.0
+license: GPL-3.0-only

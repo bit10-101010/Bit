@@ -7,19 +7,19 @@ jobs:
     runs-on: ubuntu-22.04
     defaults:
       run:
-        working-directory: Stockfish/src
+        working-directory: Bit/src
         shell: bash
     steps:
-      - name: Checkout Stockfish
+      - name: Checkout Bit
         uses: actions/checkout@v4
         with:
-          path: Stockfish
+          path: Bit
           persist-credentials: false
 
       - name: Checkout include-what-you-use
         uses: actions/checkout@v4
         with:
-          repository: include-what-you-use/include-what-you-use
+          repository: bit10-101010/include-what-you-use
           ref: f25caa280dc3277c4086ec345ad279a2463fea0f
           path: include-what-you-use
           persist-credentials: false
@@ -46,4 +46,4 @@ jobs:
           make analyze
           COMP=clang
           CXX=include-what-you-use
-          CXXFLAGS="-stdlib=libc++ -Xiwyu --comment_style=long -Xiwyu --mapping='${{ github.workspace }}/Stockfish/.github/ci/libcxx17.imp' -Xiwyu --error"
+          CXXFLAGS="-stdlib=libc++ -Xiwyu --comment_style=long -Xiwyu --mapping='${{ github.workspace }}/Bit/.github/ci/libcxx17.imp' -Xiwyu --error"
