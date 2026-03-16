@@ -1,8 +1,8 @@
 <div align="center">
 
-  [![Stockfish][stockfish128-logo]][website-link]
+  [![Bit][bit-logo]][website-link]
 
-  <h3>Stockfish</h3>
+  <h3>Bit</h3>
 
   A free and strong UCI chess engine.
   <br>
