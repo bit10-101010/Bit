@@ -138,7 +138,7 @@ project][lc0-data-link], which is made available under the [Open Database Licens
 [readme-link]:        https://github.com/bit10-101010/bit/blob/master/README.md
 [release-link]:       https://github.com/bit10-101010/bit/releases/latest
 [src-link]:           https://github.com/bit10-101010//tree/master/src
-[bit-logo]:           [https://stockfishchess.org/images/logo/icon_128x128.png](https://avatars.githubusercontent.com/u/267054980?s=400&u=a2ca190cabaeb5a07afc6dc0aab543c2720ba316&v=4)
+[bit-logo]:           [https://avatars.githubusercontent.com/u/267054980?s=400&u=a2ca190cabaeb5a07afc6dc0aab543c2720ba316&v=4]
 [uci-link]:           https://backscattering.de/chess/uci/
 [website-link]:       @bit10-101010
 [website-blog-link]:  @bit10-101010
